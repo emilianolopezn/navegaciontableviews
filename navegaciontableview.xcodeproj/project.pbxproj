@@ -14,6 +14,7 @@
 		3D06F90621529CD60039C46F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D06F90421529CD60039C46F /* LaunchScreen.storyboard */; };
 		3D06F9112152A6250039C46F /* Materia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D06F9102152A6250039C46F /* Materia.swift */; };
 		3D06F9132152AC590039C46F /* CeldaMateria.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D06F9122152AC590039C46F /* CeldaMateria.swift */; };
+		3DF28AAF21542AE500978F71 /* DetalleMateriaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF28AAE21542AE500978F71 /* DetalleMateriaController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		3D06F90721529CD60039C46F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3D06F9102152A6250039C46F /* Materia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Materia.swift; sourceTree = "<group>"; };
 		3D06F9122152AC590039C46F /* CeldaMateria.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeldaMateria.swift; sourceTree = "<group>"; };
+		3DF28AAE21542AE500978F71 /* DetalleMateriaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalleMateriaController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 			children = (
 				3D06F8FD21529CD50039C46F /* ViewController.swift */,
 				3D06F9122152AC590039C46F /* CeldaMateria.swift */,
+				3DF28AAE21542AE500978F71 /* DetalleMateriaController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -167,6 +170,7 @@
 			files = (
 				3D06F8FE21529CD50039C46F /* ViewController.swift in Sources */,
 				3D06F9132152AC590039C46F /* CeldaMateria.swift in Sources */,
+				3DF28AAF21542AE500978F71 /* DetalleMateriaController.swift in Sources */,
 				3D06F8FC21529CD50039C46F /* AppDelegate.swift in Sources */,
 				3D06F9112152A6250039C46F /* Materia.swift in Sources */,
 			);

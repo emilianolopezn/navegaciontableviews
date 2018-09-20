@@ -44,7 +44,7 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="lblNombre" destination="DEw-j1-dA0" id="K64-pG-DWZ"/>
-                                            <segue destination="Dtd-zc-hN2" kind="show" id="svk-yH-AOt"/>
+                                            <segue destination="Dtd-zc-hN2" kind="show" identifier="goToDetalleMateria" id="svk-yH-AOt"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -64,6 +64,9 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="xH3-YD-tX8"/>
+                    <connections>
+                        <outlet property="tbMaterias" destination="u1f-sg-a9E" id="qt9-f1-jfe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -72,7 +75,7 @@
         <!--Materia-->
         <scene sceneID="ImY-Kj-JiE">
             <objects>
-                <viewController title="Materia" id="Dtd-zc-hN2" sceneMemberID="viewController">
+                <viewController title="Materia" id="Dtd-zc-hN2" customClass="DetalleMateriaController" customModule="navegaciontableview" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7qV-WT-CCq">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -83,8 +86,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CYk-aj-V8D">
-                                <rect key="frame" x="324" y="109" width="35" height="37"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CYk-aj-V8D">
+                                <rect key="frame" x="346.5" y="109" width="12.5" height="37"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="31"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -95,8 +98,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1xn-DB-HoI">
-                                <rect key="frame" x="324" y="183" width="35" height="37"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1xn-DB-HoI">
+                                <rect key="frame" x="346.5" y="183" width="12.5" height="37"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="31"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -107,8 +110,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EhF-N1-AGz">
-                                <rect key="frame" x="324" y="257" width="35" height="37"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EhF-N1-AGz">
+                                <rect key="frame" x="346.5" y="257" width="12.5" height="37"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="31"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -119,8 +122,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O89-cX-0Wz">
-                                <rect key="frame" x="300" y="331" width="59" height="62"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O89-cX-0Wz">
+                                <rect key="frame" x="338" y="331" width="21" height="62"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="53"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -152,6 +155,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="HuY-Pf-mgC"/>
                     </view>
+                    <connections>
+                        <outlet property="lblCalificacionFinal" destination="O89-cX-0Wz" id="lEp-HT-bV5"/>
+                        <outlet property="lblCalificacionPrimerParcial" destination="CYk-aj-V8D" id="Ds9-MA-Kcf"/>
+                        <outlet property="lblCalificacionSegundoParcial" destination="1xn-DB-HoI" id="nox-m3-I3H"/>
+                        <outlet property="lblCalificacionTercerParcial" destination="EhF-N1-AGz" id="CWZ-ko-3Gs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jCT-gA-P5Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
